@@ -11,7 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 var app = builder.Build();
 
-// Garante que o banco e as tabelas existem
+// garante que o banco e as tabelas existem
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<FilmesContext>();
@@ -37,7 +37,7 @@ using (var scope = app.Services.CreateScope())
                 new Filme { Titulo = "O Poderoso Chefão", Sinopse = "A saga da família mafiosa Corleone.", DataLancamento = new DateTime(1972, 3, 24), Genero = "Crime", Diretor = "Francis Ford Coppola" },
 
                 new Filme { Titulo = "Clube da Luta", Sinopse = "Um homem insatisfeito forma um clube secreto de lutas.", DataLancamento = new DateTime(1999, 10, 15), Genero = "Drama", Diretor = "David Fincher" },
-                
+
                 new Filme { Titulo = "Vingadores: Ultimato", Sinopse = "Os heróis se unem para derrotar Thanos.", DataLancamento = new DateTime(2019, 4, 26), Genero = "Ação", Diretor = "Anthony Russo, Joe Russo" }
         );
         db.SaveChanges();
@@ -53,7 +53,7 @@ if (app.Environment.IsDevelopment())
 app.UseAuthorization();
 
 //mensagem para mostrar se está rodando certinho no localhost:5200
-app.MapGet("/", () => "API de Filmes rodando!");
+app.MapGet("/", () => "API de Filmes rodando! Abra http://localhost:5200/swagger/index.html para visualizar as Apis!!!");
 
 // Registrar rotas API
 Console.WriteLine("Registrando rotas GET...");
