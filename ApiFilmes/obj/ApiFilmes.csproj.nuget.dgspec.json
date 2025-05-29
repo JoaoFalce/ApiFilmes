@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\joaoh\\OneDrive\\Desktop\\ApiFilmes2\\ApiFilmes\\ApiFilmes.csproj": {}
+    "C:\\Users\\joaoh\\OneDrive\\Desktop\\ApiFilmes\\ApiFilmes\\ApiFilmes.csproj": {}
   },
   "projects": {
-    "C:\\Users\\joaoh\\OneDrive\\Desktop\\ApiFilmes2\\ApiFilmes\\ApiFilmes.csproj": {
+    "C:\\Users\\joaoh\\OneDrive\\Desktop\\ApiFilmes\\ApiFilmes\\ApiFilmes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joaoh\\OneDrive\\Desktop\\ApiFilmes2\\ApiFilmes\\ApiFilmes.csproj",
+        "projectUniqueName": "C:\\Users\\joaoh\\OneDrive\\Desktop\\ApiFilmes\\ApiFilmes\\ApiFilmes.csproj",
         "projectName": "ApiFilmes",
-        "projectPath": "C:\\Users\\joaoh\\OneDrive\\Desktop\\ApiFilmes2\\ApiFilmes\\ApiFilmes.csproj",
+        "projectPath": "C:\\Users\\joaoh\\OneDrive\\Desktop\\ApiFilmes\\ApiFilmes\\ApiFilmes.csproj",
         "packagesPath": "C:\\Users\\joaoh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joaoh\\OneDrive\\Desktop\\ApiFilmes2\\ApiFilmes\\obj\\",
+        "outputPath": "C:\\Users\\joaoh\\OneDrive\\Desktop\\ApiFilmes\\ApiFilmes\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\joaoh\\AppData\\Roaming\\NuGet\\NuGet.Config"

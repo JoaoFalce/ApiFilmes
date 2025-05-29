@@ -3,14 +3,13 @@ using Microsoft.EntityFrameworkCore;
 public class FilmesContext : DbContext
 {
     public DbSet<Filme> Filmes { get; set; }
+    public FilmesContext(DbContextOptions<FilmesContext> options) : base(options) {}
 
-    public FilmesContext(DbContextOptions<FilmesContext> options)
-        : base(options)
-    { }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Filme>().ToTable("Filmes");
 
         modelBuilder.Entity<Filme>()
             .Property(f => f.Titulo)
