@@ -11,7 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 var app = builder.Build();
 
-// garante que o banco e as tabelas existem
+
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<FilmesContext>();
@@ -55,7 +55,7 @@ app.UseAuthorization();
 //mensagem para mostrar se está rodando certinho no localhost:5200
 app.MapGet("/", () => "API de Filmes rodando! Abra http://localhost:5200/swagger/index.html para visualizar as Apis!!!");
 
-// Registrar rotas API
+
 Console.WriteLine("Registrando rotas GET...");
 Rota_GET.MapGetRoutes(app);
 Rota_POST.MapPostRoutes(app);
