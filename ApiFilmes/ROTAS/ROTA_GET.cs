@@ -16,7 +16,7 @@ public static class Rota_GET
     
         app.MapGet("/api/filmes/genero/{genero}", async (string genero, FilmesContext context) =>
         {
-          o
+          
             var filmes = await context.Filmes
                 .Where(f => f.Genero.ToLower().Contains(genero.ToLower()))
                 .ToListAsync();
