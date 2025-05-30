@@ -13,9 +13,9 @@ public static class Rota_DELETE
 
             
             context.Filmes.Remove(filme);
-            // Salva as alterações de forma assíncrona
+         
             await context.SaveChangesAsync();
-            // Retorna 204 No Content
+           
             return Results.NoContent();
         });
     }
